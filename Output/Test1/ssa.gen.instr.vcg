@@ -1,0 +1,40 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a01870"
+color: white
+label: 
+"{0}
+  0 mov     S0_00        #0
+  1 mov     L1_01     S0_00
+  2 mov     S0_02     L1_01
+  3 mov     S1_03       #20
+  4 add     S0_04     S1_03     S0_02
+  5 mov     L2_05     S0_04
+  6 mov     S0_06     L2_05
+  7 mov     L3_07     S0_06
+  8 mov     S0_08     L1_01
+  9 bne     S0_08       {2}       {1}"
+}
+node: {
+title: "0x100a025f0"
+color: white
+label: 
+"{1}
+ 10 mov     S0_10       #53
+ 11 mov     L3_11     S0_10"
+}
+node: {
+title: "0x100a02d20"
+color: white
+label: 
+"{2}
+101 phi    L3_101   0:L3_07   1:L3_11
+102 phi    S0_102   0:S0_08   1:S0_10
+ 12 mov     S0_12    L3_101
+ 13 cll     S0_12
+ 14 end"
+}
+edge: { sourcename: "0x100a01870" targetname: "0x100a02d20" arrowstyle: solid}
+edge: { sourcename: "0x100a01870" targetname: "0x100a025f0" arrowstyle: solid}
+edge: { sourcename: "0x100a025f0" targetname: "0x100a02d20" arrowstyle: solid}
+}

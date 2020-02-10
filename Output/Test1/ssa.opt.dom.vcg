@@ -1,0 +1,22 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a04560"
+color: white
+label: 
+"{0}"
+}
+node: {
+title: "0x100a04580"
+color: white
+label: 
+"{1}"
+}
+node: {
+title: "0x100a045a0"
+color: white
+label: 
+"{2}"
+}
+edge: { sourcename: "0x100a04560" targetname: "0x100a045a0" arrowstyle: solid}
+edge: { sourcename: "0x100a04560" targetname: "0x100a04580" arrowstyle: solid}
+}

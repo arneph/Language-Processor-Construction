@@ -1,0 +1,30 @@
+{0}
+  0 mov        S0        #0
+  1 mov        L1        S0
+  2 mov        S0        #0
+  3 mov        L2        S0
+{1}
+  4 mov        S0        L2
+  5 mov        S1       #10
+  6 cmp         T        S1        S0
+  7 bge         T       {6}       {2}
+{2}
+  8 mov        S0        L2
+  9 mov        S1        #5
+ 10 cmp         T        S1        S0
+ 11 bne         T       {4}       {3}
+{3}
+ 12 mov        S0        L1
+ 13 mov        S1        L2
+ 14 add        S0        S1        S0
+ 15 mov        L1        S0
+ 16 bra       {5}
+{4}
+ 17 add        L1        L1       #25
+{5}
+ 18 add        L2        L2        #1
+ 19 bra       {1}
+{6}
+ 20 mov        S0        L1
+ 21 cll        S0
+ 22 end

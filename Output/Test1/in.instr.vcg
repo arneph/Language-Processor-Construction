@@ -1,0 +1,38 @@
+graph: { title: "Graph"
+node: {
+title: "0x100881130"
+color: white
+label: 
+"{0}
+  0 mov        S0        #0
+  1 mov        L1        S0
+  2 mov        S0        L1
+  3 mov        S1       #20
+  4 add        S0        S1        S0
+  5 mov        L2        S0
+  6 mov        S0        L2
+  7 mov        L3        S0
+  8 mov        S0        L1
+  9 bne        S0       {2}       {1}"
+}
+node: {
+title: "0x1008814d0"
+color: white
+label: 
+"{1}
+ 10 mov        S0       #53
+ 11 mov        L3        S0"
+}
+node: {
+title: "0x100881500"
+color: white
+label: 
+"{2}
+ 12 mov        S0        L3
+ 13 cll        S0
+ 14 end"
+}
+edge: { sourcename: "0x100881130" targetname: "0x100881500" arrowstyle: solid}
+edge: { sourcename: "0x100881130" targetname: "0x1008814d0" arrowstyle: solid}
+edge: { sourcename: "0x1008814d0" targetname: "0x100881500" arrowstyle: solid}
+}

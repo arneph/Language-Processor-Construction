@@ -1,0 +1,4 @@
+Move Instruction Elimination Trace
+000: S0_00 ->    #0
+001: L1_01 ->    #0
+002: S0_02 ->    #0

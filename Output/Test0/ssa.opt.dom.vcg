@@ -1,0 +1,8 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a03d20"
+color: white
+label: 
+"{0}"
+}
+}

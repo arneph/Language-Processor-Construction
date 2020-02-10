@@ -1,0 +1,30 @@
+graph: { title: "Graph"
+node: {
+title: "0x10087c5f0"
+color: white
+label: 
+"{0}"
+}
+node: {
+title: "0x10087d080"
+color: white
+label: 
+"{1}"
+}
+node: {
+title: "0x10087d0a0"
+color: white
+label: 
+"{2}"
+}
+node: {
+title: "0x100881440"
+color: white
+label: 
+"{3}"
+}
+edge: { sourcename: "0x10087c5f0" targetname: "0x10087d080" arrowstyle: solid}
+edge: { sourcename: "0x10087d080" targetname: "0x100881440" arrowstyle: solid}
+edge: { sourcename: "0x10087d080" targetname: "0x10087d0a0" arrowstyle: solid}
+edge: { sourcename: "0x10087d0a0" targetname: "0x10087d080" arrowstyle: solid}
+}

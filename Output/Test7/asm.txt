@@ -1,0 +1,114 @@
+lbl_A:
+JGE lbl_V
+JMP lbl_T
+
+lbl_B:
+JGE lbl_W
+JMP lbl_C
+
+lbl_C:
+MOV rax, 0x2a
+CMP rax, rcx
+JL  lbl_E
+JMP lbl_D
+
+lbl_D:
+MOV rax, rcx
+JMP lbl_S
+
+lbl_E:
+ADD rcx, 0x1
+MOV rax, 0x13
+CMP rax, rcx
+JLE lbl_G
+JMP lbl_F
+
+lbl_F:
+JMP lbl_B
+
+lbl_G:
+ADD rcx, 0x1
+MOV rax, 0xb
+CMP rax, rcx
+JLE lbl_I
+JMP lbl_H
+
+lbl_H:
+JMP lbl_B
+
+lbl_I:
+MOV rax, rcx
+ADD rax, 0x1
+MOV rcx, 0x7
+CMP rcx, rax
+JLE lbl_U
+JMP lbl_J
+
+lbl_J:
+MOV rcx, rax
+JMP lbl_B
+
+lbl_K:
+MOV rcx, 0xa
+CMP rcx, rdx
+JGE lbl_X
+JMP lbl_L
+
+lbl_L:
+MOV rcx, 0x0
+
+lbl_M:
+MOV rbx, 0x14
+CMP rbx, rcx
+JGE lbl_R
+JMP lbl_N
+
+lbl_N:
+MOV rdx, 0xa
+CMP rdx, rcx
+JGE lbl_P
+JMP lbl_O
+
+lbl_O:
+MOV rdx, rax
+JMP lbl_K
+
+lbl_P:
+MOV rdx, 0xf
+CMP rdx, rcx
+JGE lbl_Q
+JMP lbl_Q
+
+lbl_Q:
+ADD rcx, 0x1
+MOV rdx, rax
+JMP lbl_M
+
+lbl_R:
+JMP lbl_K
+
+lbl_S:
+MOV rdi, rax
+CALL printInt
+RET
+
+lbl_T:
+MOV rcx, 0x0
+JMP lbl_B
+
+lbl_U:
+MOV rcx, rax
+JMP lbl_B
+
+lbl_V:
+MOV rdx, 0x0
+JMP lbl_K
+
+lbl_W:
+MOV rax, rcx
+JMP lbl_S
+
+lbl_X:
+MOV rax, rdx
+JMP lbl_S
+

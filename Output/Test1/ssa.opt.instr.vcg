@@ -1,0 +1,27 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a02d00"
+color: white
+label: 
+"{0}
+  9 bne        #0       {2}       {1}"
+}
+node: {
+title: "0x100a02f90"
+color: white
+label: 
+"{1}"
+}
+node: {
+title: "0x100a02fb0"
+color: white
+label: 
+"{2}
+101 phi    L3_101   0:  #20   1:  #53
+ 13 cll    L3_101
+ 14 end"
+}
+edge: { sourcename: "0x100a02d00" targetname: "0x100a02fb0" arrowstyle: solid}
+edge: { sourcename: "0x100a02d00" targetname: "0x100a02f90" arrowstyle: solid}
+edge: { sourcename: "0x100a02f90" targetname: "0x100a02fb0" arrowstyle: solid}
+}

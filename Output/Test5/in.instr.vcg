@@ -1,0 +1,75 @@
+graph: { title: "Graph"
+node: {
+title: "0x100b09e40"
+color: white
+label: 
+"{0}
+  0 mov        S0        #0
+  1 mov        L1        S0
+  2 mov        S0        #0
+  3 mov        L2        S0"
+}
+node: {
+title: "0x100b09bf0"
+color: white
+label: 
+"{1}
+  4 mov        S0        L2
+  5 mov        S1       #10
+  6 cmp         T        S1        S0
+  7 bge         T       {6}       {2}"
+}
+node: {
+title: "0x100b09c20"
+color: white
+label: 
+"{2}
+  8 mov        S0        L2
+  9 mov        S1        #5
+ 10 cmp         T        S1        S0
+ 11 bne         T       {4}       {3}"
+}
+node: {
+title: "0x100b0a3f0"
+color: white
+label: 
+"{3}
+ 12 mov        S0        L1
+ 13 mov        S1        L2
+ 14 add        S0        S1        S0
+ 15 mov        L1        S0
+ 16 bra       {5}"
+}
+node: {
+title: "0x100b0a500"
+color: white
+label: 
+"{4}
+ 17 add        L1        L1       #25"
+}
+node: {
+title: "0x100b0a4d0"
+color: white
+label: 
+"{5}
+ 18 add        L2        L2        #1
+ 19 bra       {1}"
+}
+node: {
+title: "0x100b0a410"
+color: white
+label: 
+"{6}
+ 20 mov        S0        L1
+ 21 cll        S0
+ 22 end"
+}
+edge: { sourcename: "0x100b09e40" targetname: "0x100b09bf0" arrowstyle: solid}
+edge: { sourcename: "0x100b09bf0" targetname: "0x100b0a410" arrowstyle: solid}
+edge: { sourcename: "0x100b09bf0" targetname: "0x100b09c20" arrowstyle: solid}
+edge: { sourcename: "0x100b09c20" targetname: "0x100b0a500" arrowstyle: solid}
+edge: { sourcename: "0x100b09c20" targetname: "0x100b0a3f0" arrowstyle: solid}
+edge: { sourcename: "0x100b0a3f0" targetname: "0x100b0a4d0" arrowstyle: solid}
+edge: { sourcename: "0x100b0a500" targetname: "0x100b0a4d0" arrowstyle: solid}
+edge: { sourcename: "0x100b0a4d0" targetname: "0x100b09bf0" arrowstyle: solid}
+}

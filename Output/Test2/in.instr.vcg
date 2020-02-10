@@ -1,0 +1,48 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a05760"
+color: white
+label: 
+"{0}
+  0 mov        S0        #0
+  1 mov        L1        S0
+  2 mov        S0        L1
+  3 mov        S1       #20
+  4 add        S0        S1        S0
+  5 mov        L2        S0
+  6 mov        S0        L2
+  7 mov        L3        S0
+  8 mov        S0        L3
+  9 ble        S0       {2}       {1}"
+}
+node: {
+title: "0x100a05780"
+color: white
+label: 
+"{1}
+ 10 mov        S0       #53
+ 11 mov        L3        S0
+ 12 bra       {3}"
+}
+node: {
+title: "0x100a05b10"
+color: white
+label: 
+"{2}
+ 13 mov        S0       #42
+ 14 mov        L3        S0"
+}
+node: {
+title: "0x100a057a0"
+color: white
+label: 
+"{3}
+ 15 mov        S0        L3
+ 16 cll        S0
+ 17 end"
+}
+edge: { sourcename: "0x100a05760" targetname: "0x100a05b10" arrowstyle: solid}
+edge: { sourcename: "0x100a05760" targetname: "0x100a05780" arrowstyle: solid}
+edge: { sourcename: "0x100a05780" targetname: "0x100a057a0" arrowstyle: solid}
+edge: { sourcename: "0x100a05b10" targetname: "0x100a057a0" arrowstyle: solid}
+}

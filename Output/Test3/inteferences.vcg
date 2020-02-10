@@ -1,0 +1,38 @@
+graph: { title: "Graph"
+node: {
+title: "0x100a096e0"
+color: turquoise
+label: 
+"T_06"
+}
+node: {
+title: "0x100a092b0"
+color: yellow
+label: 
+"L1_103"
+}
+node: {
+title: "0x100a092d0"
+color: green
+label: 
+"L2_12"
+}
+node: {
+title: "0x100b05470"
+color: green
+label: 
+"L2_104"
+}
+node: {
+title: "0x100b055b0"
+color: yellow
+label: 
+"S0_10"
+}
+edge: { sourcename: "0x100a096e0" targetname: "0x100b05470" arrowstyle: none}
+edge: { sourcename: "0x100a096e0" targetname: "0x100a092b0" arrowstyle: none}
+edge: { sourcename: "0x100a092b0" targetname: "0x100a092d0" arrowstyle: none}
+edge: { sourcename: "0x100a092b0" targetname: "0x100b05470" arrowstyle: none}
+edge: { sourcename: "0x100a092d0" targetname: "0x100b055b0" arrowstyle: none}
+edge: { sourcename: "0x100b05470" targetname: "0x100b055b0" arrowstyle: none}
+}

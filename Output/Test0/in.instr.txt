@@ -1,0 +1,6 @@
+{0}
+  0 mov        S0        #0
+  1 mov        L1        S0
+  2 mov        S0        L1
+  3 cll        S0
+  4 end

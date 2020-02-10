@@ -1,0 +1,169 @@
+Classfile /Users/arne/Documents/College Work/Year 4/COMPSCI 142B/Input/tests_class/Test7.class
+  Last modified May 28, 2019; size 692 bytes
+  MD5 checksum c89b9786c9e5c76ed04ea120b0bdc4ed
+  Compiled from "Test7.java"
+public class Test7
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #6.#18         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #19.#20        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #21.#22        // java/io/PrintStream.println:(I)V
+   #4 = Methodref          #5.#23         // Test7.printInt:(I)V
+   #5 = Class              #24            // Test7
+   #6 = Class              #25            // java/lang/Object
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               printInt
+  #12 = Utf8               (I)V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               StackMapTable
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Test7.java
+  #18 = NameAndType        #7:#8          // "<init>":()V
+  #19 = Class              #26            // java/lang/System
+  #20 = NameAndType        #27:#28        // out:Ljava/io/PrintStream;
+  #21 = Class              #29            // java/io/PrintStream
+  #22 = NameAndType        #30:#12        // println:(I)V
+  #23 = NameAndType        #11:#12        // printInt:(I)V
+  #24 = Utf8               Test7
+  #25 = Utf8               java/lang/Object
+  #26 = Utf8               java/lang/System
+  #27 = Utf8               out
+  #28 = Utf8               Ljava/io/PrintStream;
+  #29 = Utf8               java/io/PrintStream
+  #30 = Utf8               println
+{
+  public Test7();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void printInt(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: iload_0
+         4: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+         7: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 7
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=5, args_size=1
+         0: iconst_2
+         1: istore_1
+         2: iconst_5
+         3: istore_2
+         4: iconst_0
+         5: istore_3
+         6: iload_1
+         7: iload_2
+         8: if_icmpge     61
+        11: iload_1
+        12: iload_2
+        13: if_icmpge     108
+        16: iload_3
+        17: bipush        42
+        19: if_icmplt     25
+        22: goto          108
+        25: iinc          3, 1
+        28: iload_3
+        29: bipush        19
+        31: if_icmple     37
+        34: goto          11
+        37: iinc          3, 1
+        40: iload_3
+        41: bipush        11
+        43: if_icmple     49
+        46: goto          11
+        49: iinc          3, 1
+        52: iload_3
+        53: bipush        7
+        55: if_icmple     11
+        58: goto          11
+        61: iload_3
+        62: bipush        10
+        64: if_icmpge     108
+        67: iconst_0
+        68: istore        4
+        70: iload         4
+        72: bipush        20
+        74: if_icmpge     105
+        77: iload_3
+        78: iload         4
+        80: iadd
+        81: istore_3
+        82: iload         4
+        84: bipush        10
+        86: if_icmpge     92
+        89: goto          61
+        92: iload         4
+        94: bipush        15
+        96: if_icmpge     99
+        99: iinc          4, 1
+       102: goto          70
+       105: goto          61
+       108: iload_3
+       109: invokestatic  #4                  // Method printInt:(I)V
+       112: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 2
+        line 9: 4
+        line 11: 6
+        line 12: 11
+        line 13: 16
+        line 14: 22
+        line 16: 25
+        line 17: 28
+        line 18: 34
+        line 20: 37
+        line 21: 40
+        line 22: 46
+        line 24: 49
+        line 25: 52
+        line 26: 58
+        line 31: 61
+        line 32: 67
+        line 33: 77
+        line 34: 82
+        line 35: 89
+        line 37: 92
+        line 32: 99
+        line 44: 108
+        line 45: 112
+      StackMapTable: number_of_entries = 10
+        frame_type = 254 /* append */
+          offset_delta = 11
+          locals = [ int, int, int ]
+        frame_type = 13 /* same */
+        frame_type = 11 /* same */
+        frame_type = 11 /* same */
+        frame_type = 11 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 8
+          locals = [ int ]
+        frame_type = 21 /* same */
+        frame_type = 6 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 5
+        frame_type = 2 /* same */
+}
+SourceFile: "Test7.java"

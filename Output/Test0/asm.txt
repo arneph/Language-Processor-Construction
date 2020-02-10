@@ -1,0 +1,5 @@
+lbl_A:
+MOV rdi, 0x0
+CALL printInt
+RET
+

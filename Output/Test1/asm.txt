@@ -1,0 +1,16 @@
+lbl_A:
+JNE lbl_D
+JMP lbl_B
+
+lbl_B:
+MOV rax, 0x35
+
+lbl_C:
+MOV rdi, rax
+CALL printInt
+RET
+
+lbl_D:
+MOV rax, 0x14
+JMP lbl_C
+

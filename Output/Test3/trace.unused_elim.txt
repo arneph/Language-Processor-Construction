@@ -1,0 +1,4 @@
+Unused Instruction Elimination Trace
+101: T_101
+102: S1_102
+105: S0_105

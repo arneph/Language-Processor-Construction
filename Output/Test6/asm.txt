@@ -1,0 +1,62 @@
+lbl_A:
+MOV rdx, 0x0
+MOV rax, 0x0
+
+lbl_B:
+MOV rcx, 0x4
+CMP rcx, rax
+JGE lbl_N
+JMP lbl_C
+
+lbl_C:
+MOV rcx, 0x14
+CMP rcx, rdx
+JLE lbl_E
+JMP lbl_D
+
+lbl_D:
+JMP lbl_N
+
+lbl_E:
+MOV rcx, 0x0
+
+lbl_F:
+MOV rbx, 0x5
+CMP rbx, rcx
+JGE lbl_M
+JMP lbl_G
+
+lbl_G:
+MOV rbx, rcx
+CMP rbx, rax
+JGE lbl_I
+JMP lbl_H
+
+lbl_H:
+JMP lbl_M
+
+lbl_I:
+MOV rbx, rcx
+CMP rbx, rax
+JNE lbl_K
+JMP lbl_J
+
+lbl_J:
+JMP lbl_L
+
+lbl_K:
+ADD rdx, 0x2
+
+lbl_L:
+ADD rcx, 0x1
+JMP lbl_F
+
+lbl_M:
+ADD rax, 0x1
+JMP lbl_B
+
+lbl_N:
+MOV rdi, rdx
+CALL printInt
+RET
+

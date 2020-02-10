@@ -1,0 +1,2 @@
+Constant Propagation Trace
+004: S0_04 ->   #20

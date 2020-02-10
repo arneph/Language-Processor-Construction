@@ -1,0 +1,13 @@
+graph: { title: "Graph"
+node: {
+title: "0x100880620"
+color: white
+label: 
+"{0}
+  0 mov     S0_00        #0
+  1 mov     L1_01     S0_00
+  2 mov     S0_02     L1_01
+  3 cll     S0_02
+  4 end"
+}
+}

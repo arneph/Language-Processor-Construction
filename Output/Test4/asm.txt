@@ -1,0 +1,20 @@
+lbl_A:
+MOV rax, 0x0
+MOV rcx, 0x0
+
+lbl_B:
+MOV rdx, 0x5
+CMP rdx, rcx
+JGE lbl_D
+JMP lbl_C
+
+lbl_C:
+ADD rax, rcx
+ADD rcx, 0x1
+JMP lbl_B
+
+lbl_D:
+MOV rdi, rax
+CALL printInt
+RET
+
